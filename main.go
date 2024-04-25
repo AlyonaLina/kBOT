@@ -15,7 +15,7 @@ import (
 func main() {
 	pref := tele.Settings{
 		Token:  os.Getenv("TELE_TOKEN"),
-		Poller: &tele.LongPoller{Timeout: 10 * time.Second},
+		Poller: &tele.LongPoller{Timeout: 20 * time.Second},
 	}
 
 	b, err := tele.NewBot(pref)
